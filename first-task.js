@@ -10,7 +10,7 @@ function calculation (numb, mtg) {
       product = product * sortedList[i];
     }
   
-    console.log(product)
+    return product;
 }
 
 calculation(numbers, multiplyTheGreatest)
