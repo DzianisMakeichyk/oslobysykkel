@@ -10,3 +10,14 @@ function calculation (numb: number[], mtg: number) {
 
 calculation(numbers, multiplyTheGreatest)
 
+function calculationAl (numb: number[], mtg: number) {
+  const numbs = numb.sort((a,b) => b-a);
+
+  const factorial = (number, mt) => {
+    return mt <= 0 ? 1 : number[mt - 1] *= factorial(number, mt - 1);
+  };
+
+  return factorial(numbs, mtg);
+}
+
+calculationAl(numbers, multiplyTheGreatest);
